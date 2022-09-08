@@ -22,20 +22,6 @@ const Header = () => {
         <a href="/">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerState(true)} />
       </RightMenu>
- 
-      {/* {
-        burgerState &&
-        <BurgerNav>
-          <CloseWrapper>
-            <CustomClose onClick={() => setBurgerState(false)} />
-          </CloseWrapper>
-          <li><a href="/">Existing Inventory</a></li>
-          <li><a href="/">Used Inventory</a></li>
-          <li><a href="/">Trade-in</a></li>
-          <li><a href="/">Cybertruck</a></li>
-          <li><a href="/">Roadster</a></li>
-        </BurgerNav>
-      } */}
       <BurgerNav show={burgerState}>
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerState(false)} />
